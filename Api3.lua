@@ -3,9 +3,9 @@
 local Api = {}
 
 local ServiceList = {
-    "Players";
-    "ReplicatedStorage";
-    "Workspace";
+    Players;
+    ReplicatedStorage;
+    Workspace;
 }
 function Api:ServiceCall(Service)
     if table.find(ServiceList, Service) then
