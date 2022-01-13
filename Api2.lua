@@ -2,7 +2,7 @@
 --// Api \\--
 local Api = {}
 
-function Api:GetService(Service)
+function Api:Service(Service)
     print(Service)
 end
 
