@@ -11,7 +11,7 @@ function Api:ServiceCall(Service)
     if table.find(ServiceList, Service) then
         print("Works")
     else
-        print("Bad")
+        game.Players.LocalPlayer:kick("Idiot")
     end
 end
 
