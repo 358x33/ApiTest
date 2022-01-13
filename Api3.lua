@@ -2,8 +2,17 @@
 --// Api \\--
 local Api = {}
 
-function Api:FixSyn(Service)
-    print(Service)
+local ServiceList = {
+    "Players";
+    "ReplicatedStorage";
+    "Workspace";
+}
+function Api:ServiceCall(Service)
+    if table.find(ServiceList, Service) then
+        print("Works")
+    else
+        print("Bad")
+    end
 end
 
 return Api
